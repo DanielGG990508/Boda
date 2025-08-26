@@ -11,23 +11,35 @@ body {
     align-items: center;
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 
-.container {
-    width: 90%; /* Responsive width */
-    max-width: 900px;
-    min-height: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    padding-top: 200px;
-    background-color: transparent;
-
-    background-image: url('Fondo1.jpg');
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(75, 52, 31, 0.85);
+    opacity: 0.4; /* Ajusta la opacidad para que el texto sea legible */
+    z-index: -1;
+}
+
+.container {
+    width: 90%; /* Ancho flexible para adaptarse a cualquier pantalla */
+    max-width: 900px; 
+    min-height: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    padding-top: 200px; 
+    background-color: transparent;
+
+    background-image: url('Fondo1.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(75, 52, 31, 0.85); 
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -81,12 +93,12 @@ body {
     background-color: #9c3818;
 }
 
-/* --- Media Queries for Mobile Devices --- */
+/* --- Media Queries para Dispositivos Móviles --- */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
-        min-height: auto; /* Allow height to adjust automatically */
-        padding-top: 50px; /* Reduce padding for mobile */
+        min-height: auto;
+        padding-top: 50px;
     }
 
     .header h1 {
