@@ -20,7 +20,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('Fondo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,20 +28,18 @@ body {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 800px;
+    min-height: 750px;
     margin: 40px auto;
     padding: 30px;
-    /* CAMBIA ESTO: */
-    background-color: transparent; /* Hace el fondo del contenedor transparente */
+    padding-top: 100px;
+    background-color: transparent;
 
-    /* AÑADE ESTO: */
-    background-image: url(Fondo.png); /* Aplica la imagen al fondo del contenedor */
+    background-image: url('Fondo1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Puedes ajustar la opacidad de la imagen aquí si lo deseas */
-    background-color: rgba(75, 52, 31, 0.85); /* Este color quedará como un overlay */
-
+    
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -52,7 +49,7 @@ body {
 .header h1 {
     font-family: 'Georgia', serif;
     font-style: italic;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #dddddd;
     margin-bottom: 5px;
 }
